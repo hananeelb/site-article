@@ -1,0 +1,139 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid;
+    padding: 10px 20px;
+
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+header li a{
+    text-decoration: none;
+}
+header ul li a{
+    margin-left:35px;
+}
+header nav a:hover {
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+header .connexion-btn {
+    margin-left: 40px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+header .connexion-btn:hover {
+    background-color: #0056b3;
+}
+h1{
+    margin-right: 500px;
+    color:blue;
+}
+#menu{
+    background-color: black;
+    border-radius: 10px;
+    
+    
+}
+header nav a{
+    color: white;
+    font-weight: bold;
+}
+header nav a:hover{
+    background-color: rgb(170, 42, 187);
+   text-decoration: underline;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+main #articles article {
+    background-color: white;
+    border: 2px solid #ccc;
+    padding: 15px;
+    
+    margin: 10px;
+    text-align: center;
+    transition: border-color 0.3s ease;
+}
+
+main #articles article:hover {
+    border-color: red;
+}
+.formulaire form {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: auto;
+}
+.formulaire input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #6452a5;
+    border-radius: 5px;
+}
+
+
+.formulaire label {
+    margin-bottom: 10px;
+}
+
+
+.formulaire button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulaire button:hover {
+    background-color: #6452a5;
+}
+main{
+    display: flex;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #292424;
+}
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .formulaire form {
+        width: 100%;
+    }
+
+    main #articles {
+        display: block;
+    }
+}
